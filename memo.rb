@@ -50,12 +50,12 @@ elsif memo_type == 2
 
         while true # ここでwhileにしないと上のwhileに戻ってしまう
             puts "他の行も変更しますか？（はい=>y, いいえ=>n）"
-            s = $stdin.gets.chomp
-            if s == "y"
-                select = "y"
+            select = $stdin.gets.chomp
+            if select == "y"
+                
                 break
-            elsif s == "n"
-                select = "n"
+            elsif select == "n"
+                
                 break
             else
                 puts "無効な入力です。yかnを選んでください"
